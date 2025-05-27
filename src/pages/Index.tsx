@@ -36,8 +36,8 @@ const Index = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="/" className="text-green-600 hover:text-green-700 font-medium transition-colors border-b-2 border-green-600">Home</a>
               <a href="/about" className="text-gray-700 hover:text-green-600 font-medium transition-colors">About</a>
-              <a href="#products" className="text-gray-700 hover:text-green-600 font-medium transition-colors">Products</a>
-              <a href="#contact" className="text-gray-700 hover:text-green-600 font-medium transition-colors">Contact</a>
+              <a href="/products" className="text-gray-700 hover:text-green-600 font-medium transition-colors">Products</a>
+              <a href="/contact" className="text-gray-700 hover:text-green-600 font-medium transition-colors">Contact</a>
               <Button size="sm" className="bg-green-600 hover:bg-green-700">
                 <Mail className="w-4 h-4 mr-2" />
                 Contact
@@ -59,8 +59,8 @@ const Index = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a href="/" className="block px-3 py-2 text-green-600 font-medium bg-green-50 rounded">Home</a>
               <a href="/about" className="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">About</a>
-              <a href="#products" className="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Products</a>
-              <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Contact</a>
+              <a href="/products" className="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Products</a>
+              <a href="/contact" className="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Contact</a>
             </div>
           </div>
         )}
