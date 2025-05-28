@@ -17,27 +17,26 @@ const About = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white/90 backdrop-blur-md shadow-lg fixed w-full top-0 z-50">
+      <nav className="bg-white shadow-md fixed w-full top-0 z-50 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white px-4 py-2 rounded-lg font-bold text-xl">
+              <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-lg font-bold text-xl">
                 VLS
               </div>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="/" className="text-gray-700 hover:text-green-600 font-medium transition-colors">Home</a>
-              <a href="/about" className="text-green-600 hover:text-green-700 font-medium transition-colors border-b-2 border-green-600">About</a>
-              <a href="/products" className="text-gray-700 hover:text-green-600 font-medium transition-colors">Products</a>
-              <a href="/contact" className="text-gray-700 hover:text-green-600 font-medium transition-colors">Contact</a>
-              <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                <Mail className="w-4 h-4 mr-2" />
-                Contact
+              <a href="/" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+              <a href="/about" className="text-blue-600 hover:text-blue-700 font-medium transition-colors border-b-2 border-blue-600">About</a>
+              <a href="/products" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Products</a>
+              <a href="/contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</a>
+              <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
+                <Mail className="w-4 h-4" />
               </Button>
             </div>
 
@@ -52,21 +51,21 @@ const About = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t animate-fade-in">
+          <div className="md:hidden bg-white border-t">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="/" className="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Home</a>
-              <a href="/about" className="block px-3 py-2 text-green-600 font-medium bg-green-50 rounded">About</a>
-              <a href="/products" className="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Products</a>
-              <a href="/contact" className="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Contact</a>
+              <a href="/" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Home</a>
+              <a href="/about" className="block px-3 py-2 text-blue-600 font-medium bg-blue-50 rounded">About</a>
+              <a href="/products" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Products</a>
+              <a href="/contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Contact</a>
             </div>
           </div>
         )}
       </nav>
 
       {/* Page Header */}
-      <section className="pt-24 pb-12 bg-gradient-to-r from-green-600 to-blue-600">
+      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-green-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold text-white">
             About Us
           </h1>
         </div>
@@ -77,7 +76,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* What is Vimukul Life Science */}
-          <div className="mb-20 animate-fade-in">
+          <div className="mb-20">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -89,10 +88,10 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="animate-fade-in">
-                <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl p-8 h-80 flex items-center justify-center">
+              <div>
+                <div className="bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl p-8 h-80 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-32 h-32 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-32 h-32 bg-gradient-to-r from-blue-600 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-white text-4xl font-bold">VLS</span>
                     </div>
                     <p className="text-gray-600 font-medium">Leading Medical Innovation</p>
@@ -103,8 +102,8 @@ const About = () => {
           </div>
 
           {/* Vision */}
-          <div className="mb-20 animate-fade-in">
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8">
+          <div className="mb-20">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
                 Vision
               </h2>
@@ -115,8 +114,8 @@ const About = () => {
           </div>
 
           {/* Mission */}
-          <div className="mb-20 animate-fade-in">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+          <div className="mb-20">
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
                 Mission
               </h2>
@@ -129,8 +128,10 @@ const About = () => {
         </div>
       </section>
 
+      <hr className="border-gray-200" />
+
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 border-t">
+      <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-center md:text-left mb-4 md:mb-0">
